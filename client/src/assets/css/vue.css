@@ -1,0 +1,91 @@
+body {
+    ont-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.846;
+    color: #666666;
+}
+
+a {
+    color: #2196f3;
+}
+
+.thumbnail {
+    display: block;
+}
+
+.nav-sidebar a {
+    display: block;
+}
+
+.nav-sidebar>li>div>a {
+    color: #7a7a7a;
+    padding: 7px 0 7px 16px;
+}
+
+.nav-sidebar>li>div>a:hover,
+.nav-sidebar>li>div>a:focus {
+    background: none;
+    color: #1378b9;
+}
+
+.nav-sidebar>li.active>div>a {
+    color: #2196F3;
+}
+
+.file-tree ul.nav-sidebar {
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+}
+
+.file-tree ul.nav-sidebar:first-child {
+    padding-left: 0;
+}
+
+.file-tree ul.nav-sidebar.file-tree-root>li {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.has-clear {
+    position: relative;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+.form-control-clear {
+    z-index: 10;
+    /* pointer-events: auto; */
+    cursor: pointer;
+}
+
+
+/* .has-feedback  */
+
+.has-clear {
+    position: relative;
+}
+
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 200;
+    display: block;
+    width: 34px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #495057;
+    cursor: pointer;
+}
+
+#exampleContainer {
+    padding: 50px;
+}
+
+.navbar .btn.btn-flat {
+    height: 38px;
+}

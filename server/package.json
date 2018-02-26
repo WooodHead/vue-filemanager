@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.0",
+    "eslint-plugin-html": "^4.0.2",
+    "express": "~4.14.1",
+    "filesize": "^3.6.0",
+    "formidable": "^1.1.1",
+    "jade": "~1.11.0",
+    "mongoose": "^5.0.5",
+    "morgan": "~1.7.0",
+    "require-dir": "^1.0.0",
+    "sequelize": "^4.33.4",
+    "serve-favicon": "~2.3.2",
+    "sqlite3": "^3.1.13"
+  }
+}
