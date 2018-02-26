@@ -1,0 +1,26 @@
+{
+  "name": "vue-filemanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/bin/www",
+  "scripts":{
+    "start": "node ./server/bin/www"
+  },
+  "dependencies": {
+    "vue-moment": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WooodHead/vue-filemanager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WooodHead/vue-filemanager/issues"
+  },
+  "homepage": "https://github.com/WooodHead/vue-filemanager#readme"
+}
