@@ -16,17 +16,6 @@
       </div>
     </div>
 
-    <div ng-show="fileNavigator.requesting">
-      <div ng-include="config.tplPath + '/spinner.html'"></div>
-    </div>
-
-    <div class="alert alert-warning" ng-show="!fileNavigator.requesting && fileNavigator.fileList.length < 1 && !fileNavigator.error">
-      <!-- {{"no_files_in_folder" }}... -->
-    </div>
-
-    <div class="alert alert-danger" ng-show="!fileNavigator.requesting && fileNavigator.error">
-      <!-- {{ fileNavigator.error }} -->
-    </div>
   </div>
 
 </template>

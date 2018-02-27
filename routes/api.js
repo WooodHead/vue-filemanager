@@ -9,7 +9,7 @@ var fileSize = require('filesize');
 var formidable = require('formidable');
 var path = require('path');
 
-var basePath = nodePath.join(__dirname, '../public');
+var basePath = nodePath.join(__dirname, '../public/ftp');
 
 router.get('/files', function(req, res, next) {
   var queryPath = req.query.path;

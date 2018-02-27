@@ -12,33 +12,8 @@ Vue.use(Router);
 export default new Router({
   // mode: 'history',
   routes: [{
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: '/register',
-      name: 'register',
-      component: Register
-    },
-    {
-      path: '/songs',
-      name: 'songs',
-      component: Songs
-    }, {
-      path: '/songs/create',
-      name: 'songs-create',
-      component: CreateSong
-    },
-    {
-      path: '/repos',
-      name: 'repos',
-      component: Repos
-    },
-    {
-      path: '/manager',
-      name: 'manager',
-      component: Manager
-    }
-  ]
+    path: '/',
+    name: 'manager',
+    component: Manager
+  }]
 });

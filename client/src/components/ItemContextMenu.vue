@@ -10,70 +10,70 @@
       </li>
 
       <li ng-show="config.pickCallback && singleSelection() && singleSelection().isSelectable()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="config.pickCallback(singleSelection().model)">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="config.pickCallback(singleSelection().model)">
           <i class="fa fa-hand-o-up" aria-hidden="true"></i>
           select_this
         </a>
       </li>
 
       <li v-show="controller&&!controller.selectionHas('dir') && controller.singleSelection()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="download()">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="download()">
           <i class="fa fa-cloud-download"></i>
           download
         </a>
       </li>
 
       <li v-show="controller&&!controller.selectionHas('dir') && controller.singleSelection()" ng-show="config.allowedActions.downloadMultiple && !selectionHas('dir') && !singleSelection()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="download()">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="download()">
           <i class="fa fa-cloud-download"></i> download_as_zip
         </a>
       </li>
 
       <li ng-show="config.allowedActions.preview && singleSelection().isImage() && singleSelection()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="openImagePreview()">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="openImagePreview()">
           <i class="fa fa-eye"></i> view_item
         </a>
       </li>
 
       <li ng-show="config.allowedActions.rename && singleSelection()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modal('rename')">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modal('rename')">
           <i class="fa fa-edit"></i> rename
         </a>
       </li>
 
       <li ng-show="config.allowedActions.move">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modalWithPathSelector('move')">
+        <a v-b-modal.move class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modalWithPathSelector('move')">
           <i class="fa fa-arrow-right"></i> move
         </a>
       </li>
 
       <li ng-show="config.allowedActions.copy && !selectionHas('dir')">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modalWithPathSelector('copy')">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modalWithPathSelector('copy')">
           <i class="fa fa-clipboard    "></i> copy
         </a>
       </li>
 
       <li ng-show="config.allowedActions.edit && singleSelection() && singleSelection().isEditable()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="openEditItem()">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="openEditItem()">
           <i class="fa fa-pencil"></i> edit
         </a>
       </li>
 
       <li ng-show="config.allowedActions.changePermissions">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modal('changepermissions')">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modal('changepermissions')">
           <i class="fa fa-lock"></i> permissions
         </a>
       </li>
 
       <li ng-show="config.allowedActions.compress && (!singleSelection() || selectionHas('dir'))">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modal('compress')">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modal('compress')">
           <i class="fa fa-file-zip-o" aria-hidden="true"></i>
           compress
         </a>
       </li>
 
       <li ng-show="config.allowedActions.extract && singleSelection() && singleSelection().isExtractable()">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modal('extract')">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modal('extract')">
           <i class="fa fa-arrow-up"></i> extract
 
         </a>
@@ -82,7 +82,7 @@
       <li class="divider" ng-show="config.allowedActions.remove"></li>
 
       <li ng-show="config.allowedActions.remove">
-        <a class="dropdown-item" href="" tabindex="-1" ng-click="modal('remove')">
+        <a class="dropdown-item"  href="javascript:void(0)" tabindex="-1" ng-click="modal('remove')">
           <i class="fa fa-trash"></i> remove
         </a>
       </li>

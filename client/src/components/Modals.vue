@@ -45,6 +45,36 @@
   </div>
 </form>
 </b-modal>
+
+<b-modal id="move" title="Move" @shown="" no-fade>
+  <form>
+    <b-form-group label="Folder name" label-for="folder-name-input">
+      <b-form-input ref="move" id="folder-name-input"></b-form-input>
+      <div>123123</div>
+      <div>{{getSelectedPath}}</div>
+    </b-form-group>
+  </form>
+
+  <div class="panel panel-primary mt10 mb0">
+    <div class="panel-body">
+      <div class="detail-sources">
+        <!-- <div class="like-code mr5"><b>{{"selection" | translate}}:</b> -->
+        <span ng-include="'selected-files-msg'"></span>
+      </div>
+    </div>
+    <div class="detail-sources">
+      <div class="like-code mr5">
+        <!-- <b>{{"destination" | translate}}:</b> {{ getSelectedPath() }} -->
+      </div>
+      <!-- <a href="" class="label label-primary" ng-click="openNavigator(fileNavigator.currentPath)"> -->
+      <!-- {{'change' | translate}} -->
+      <!-- </a> -->
+    </div>
+  </div>
+
+
+</b-modal>
+
 </div>
 
 </template>
@@ -52,6 +82,7 @@
 <script>
   import { mapGetters, mapState, mapActions } from 'vuex';
   import axios from 'axios';
+  import ViewController from '@/controllers/ViewController';
 
   export default {
     components: {},
@@ -59,12 +90,24 @@
       return {
         file: null,
         files: [],
-        progress: 0
+        progress: 0,
+        controller: null
       };
     },
-    mounted() {},
+    mounted() {
+      this.controller = new ViewController(this.$store);
+    },
     computed: {
-      ...mapGetters(['currentPath', 'fileList', 'basePath'])
+      ...mapGetters(['currentPath', 'fileList', 'basePath']),
+      getSelectedPath() {
+        var path = this.currentPath.filter(Boolean);
+        var result = '/' + path.join('/');
+        if (this.controller && this.controller.singleSelection() && !this.controller.singleSelection().model.type === 'dir') {
+          result += '/' + this.controller.singleSelection().tempModel.name;
+        }
+        return result.replace(/\/\//, '/');
+      }
+
     },
     methods: {
       ...mapActions(['loadData', 'setCurrentPath']),
@@ -135,7 +178,7 @@
         });
 
       }
-    }
+    },
 
   };
 </script>
