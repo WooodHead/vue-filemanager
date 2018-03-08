@@ -1,0 +1,109 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "vue-prism",
+        "scope": null,
+        "escapedName": "vue-prism",
+        "name": "vue-prism",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/scott/projects/electron/code-notes-my"
+    ]
+  ],
+  "_cnpm_publish_time": 1492439957144,
+  "_from": "vue-prism@latest",
+  "_hasShrinkwrap": false,
+  "_id": "vue-prism@1.0.5",
+  "_inCache": true,
+  "_location": "/vue-prism",
+  "_nodeVersion": "6.9.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/vue-prism-1.0.5.tgz_1492439955022_0.795959041453898"
+  },
+  "_npmUser": {
+    "name": "creotip",
+    "email": "creotip@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "vue-prism",
+    "scope": null,
+    "escapedName": "vue-prism",
+    "name": "vue-prism",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/vue-prism/download/vue-prism-1.0.5.tgz",
+  "_shasum": "6e7777adb2fa11c0a8cb99e0265112a105549550",
+  "_shrinkwrap": null,
+  "_spec": "vue-prism",
+  "_where": "/Users/scott/projects/electron/code-notes-my",
+  "author": {
+    "name": "Ruslan Elisha",
+    "email": "creotip@gmail.com"
+  },
+  "dependencies": {
+    "prismjs": "^1.6.0"
+  },
+  "description": "Highlight code with Vue.js and Prism.js",
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "vue": "^2.2.1",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "6e7777adb2fa11c0a8cb99e0265112a105549550",
+    "size": 18853,
+    "noattachment": false,
+    "tarball": "http://registry.npm.taobao.org/vue-prism/download/vue-prism-1.0.5.tgz"
+  },
+  "gitHead": "faefb1fe885eb40c97c5b18084d9fdbf5ce22d6f",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue-component",
+    "prism.js",
+    "syntax",
+    "highlight"
+  ],
+  "main": "src/index.js",
+  "maintainers": [
+    {
+      "name": "creotip",
+      "email": "creotip@gmail.com"
+    }
+  ],
+  "name": "vue-prism",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "vue": "2.x"
+  },
+  "publish_time": 1492439957144,
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot"
+  },
+  "version": "1.0.5"
+}
