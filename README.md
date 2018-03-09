@@ -1,4 +1,4 @@
-## angular-filemanager
+## vue-filemanager
 
 A very smart filemanager to manage your files in the browser developed in AngularJS following Material Design styles by [Jonas Sciangula Street](https://github.com/joni2back)
 
